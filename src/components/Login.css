@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentBox {
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.contentBox h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contentBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBox label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+.contentBox input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contentBox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.contentBox .loginButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentBox .loginButton:hover {
+    
+    background-color: #0056b3;
+    transform: translatey(-2px);
+}
+
+.contentBox .loginButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sendIcon {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .contentBox {
+        padding: 20px;
+    }
+}
